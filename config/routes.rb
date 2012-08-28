@@ -1,4 +1,6 @@
 Resources::Application.routes.draw do
+  get "home/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -6,7 +8,7 @@ Resources::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
- 
+  match 'home' => 'home#index' 
   match 'quick-fast-loans' => redirect("http://www.thepaydayhound.com/quick-fast-loans/")
   match 'jupiter-funding-group' => redirect("http://www.thepaydayhound.com/jupiter-funding-group/")
   match 'great-plains-lending' => redirect("http://www.thepaydayhound.com/great-plains-lending/")
