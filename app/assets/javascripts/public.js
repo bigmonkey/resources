@@ -260,8 +260,8 @@ $(document).ready(function () {
     $("#sliderPurBal").slider({
         value: purBal,
         min: 0,
-        max: 3000,
-        step: 100,
+        max: 1000,
+        step: 50,
         slide: function (event, ui){
           $("#calcPurBal").html(ui.value).currency({decimals:0});
           purBal = ui.value;
@@ -276,8 +276,8 @@ $(document).ready(function () {
     $("#sliderCashBal").slider({
         value: cashBal,
         min: 0,
-        max: 3000,
-        step: 100,
+        max: 1000,
+        step: 50,
         slide: function (event, ui) {
             $("#calcCashBal").html(ui.value).currency({decimals:0});
             cashBal = ui.value;
@@ -294,7 +294,7 @@ $(document).ready(function () {
     $("#sliderDuration").slider({
         value: duration,
         min: 1,
-        max: 48,
+        max: 36,
         step: 1,
         slide: function (event, ui) {
             $("#calcDuration").html(ui.value);
@@ -316,10 +316,10 @@ $(document).ready(function () {
 $(document).ready(function () {
 
     $("#blogSliderPurBal").slider({
-        value: 400,
+        value: 600,
         min: 0,
-        max: 3000,
-        step: 100,
+        max: 1000,
+        step: 50,
         slide: function (event, ui){
           $("#blogCalcPurBal").html(ui.value).currency({decimals:0});
           $("#criteria_PurBal").val(ui.value);  
@@ -327,10 +327,10 @@ $(document).ready(function () {
     });
 
     $("#blogSliderCashBal").slider({
-        value: 100,
+        value: 0,
         min: 0,
-        max: 3000,
-        step: 100,
+        max: 1000,
+        step: 500,
         slide: function (event, ui) {
             $("#blogCalcCashBal").html(ui.value).currency({decimals:0});
             $("#criteria_CashBal").val(ui.value);
@@ -340,7 +340,7 @@ $(document).ready(function () {
     $("#blogSliderDuration").slider({
         value: 20,
         min: 1,
-        max: 48,
+        max: 36,
         step: 1,
         slide: function (event, ui) {
             $("#blogCalcDuration").html(ui.value);
