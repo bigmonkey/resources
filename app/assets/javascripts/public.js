@@ -330,7 +330,7 @@ $(document).ready(function () {
         value: 0,
         min: 0,
         max: 1000,
-        step: 500,
+        step: 50,
         slide: function (event, ui) {
             $("#blogCalcCashBal").html(ui.value).currency({decimals:0});
             $("#criteria_CashBal").val(ui.value);
@@ -338,7 +338,7 @@ $(document).ready(function () {
     });
 
     $("#blogSliderDuration").slider({
-        value: 20,
+        value: 8,
         min: 1,
         max: 36,
         step: 1,
